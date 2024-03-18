@@ -1,4 +1,4 @@
-import 'dart:math';
+import 'dart:developer';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -32,20 +32,20 @@ class FirebaseUserRepo implements UserRepoo {
       await _firebaseAuth.signInWithEmailAndPassword(
           email: email, password: password);
     } catch (e) {
-      log(e.toString() as num); // Check this not supposed to be casted
+      log(e.toString()); // Check
       rethrow;
     }
   }
 
   @override
-  Future<MyUser> signUp(MyUser myUser, String password) async {
+  Future<MyUser> signUp(MyUser myUser, String? password) async {
     try {
       UserCredential user = await _firebaseAuth.createUserWithEmailAndPassword(
-          email: myUser.email, password: password);
+          email: myUser.email, password: password!);
       myUser.userId = user.user!.uid;
       return myUser;
     } catch (e) {
-      log(e.toString() as num); // Check this not supposed to be casted
+      log(e.toString()); // Check
       rethrow;
     }
   }
@@ -60,7 +60,7 @@ class FirebaseUserRepo implements UserRepoo {
     try {
       await usersCollection.doc(user.userId).set(user.toEntity().toDocument());
     } catch (e) {
-      log(e.toString() as num); // Check this not supposed to be casted
+      log(e.toString()); // Check this not supposed to be casted
       rethrow;
     }
   }
