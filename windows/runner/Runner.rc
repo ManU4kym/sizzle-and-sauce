@@ -90,12 +90,21 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
+<<<<<<< HEAD
             VALUE "FileDescription", "pizaa" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
             VALUE "InternalName", "pizaa" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
             VALUE "OriginalFilename", "pizaa.exe" "\0"
             VALUE "ProductName", "pizaa" "\0"
+=======
+            VALUE "FileDescription", "pizaa_app" "\0"
+            VALUE "FileVersion", VERSION_AS_STRING "\0"
+            VALUE "InternalName", "pizaa_app" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
+            VALUE "OriginalFilename", "pizaa_app.exe" "\0"
+            VALUE "ProductName", "pizaa_app" "\0"
+>>>>>>> b00963f4256649cdb64ac479babe03509b8579ff
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

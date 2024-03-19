@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "name": "pizaa",
     "short_name": "pizaa",
+=======
+    "name": "pizaa_app",
+    "short_name": "pizaa_app",
+>>>>>>> b00963f4256649cdb64ac479babe03509b8579ff
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -1,10 +1,18 @@
 # Project-level configuration.
 cmake_minimum_required(VERSION 3.14)
+<<<<<<< HEAD
 project(pizaa LANGUAGES CXX)
 
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
 set(BINARY_NAME "pizaa")
+=======
+project(pizaa_app LANGUAGES CXX)
+
+# The name of the executable created for the application. Change this to change
+# the on-disk name of your application.
+set(BINARY_NAME "pizaa_app")
+>>>>>>> b00963f4256649cdb64ac479babe03509b8579ff
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.

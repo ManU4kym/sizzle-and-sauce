@@ -8,7 +8,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+<<<<<<< HEAD
 import 'package:pizaa/main.dart';
+=======
+import 'package:pizaa_app/main.dart';
+>>>>>>> b00963f4256649cdb64ac479babe03509b8579ff
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

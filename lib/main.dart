@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
+=======
+import 'package:flutter/services.dart';
+>>>>>>> b00963f4256649cdb64ac479babe03509b8579ff
 
 void main() {
   runApp(const MyApp());
 }
 
+<<<<<<< HEAD
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -120,6 +125,24 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
+=======
+class MyApp  extends StatelessWidget {
+  const MyApp ({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+    ));
+    return MaterialApp (
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primaryColor: Colors.deepPurple,
+        useMaterial3: true,
+        brightness: Brightness.dark,
+
+      ),
+>>>>>>> b00963f4256649cdb64ac479babe03509b8579ff
     );
   }
 }
