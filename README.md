@@ -1,6 +1,6 @@
 
 =======
-# Pizza App
+# Pizza 
 
 Pizza App is a mobile application developed using Flutter and Flutter Bloc, following the Clean Architecture principles. This app allows users to browse a variety of pizzas, customize their orders, and place them.
 
@@ -39,7 +39,7 @@ Make sure you have Flutter installed. For installation instructions, refer to th
    git clone https://github.com/ManU4kym/sizzle-and-sauce.git
 2. Navigate to project:
     ````
-   cd pizaa_app
+   cd pizaa
 3. Install dependencies:
     ````
    flutter pub get
