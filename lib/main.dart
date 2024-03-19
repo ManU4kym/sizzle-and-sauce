@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:pizaa/pages/login_page.dart';
+import 'package:pizaa/theme/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => ThemeProvider(),
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -11,9 +19,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        brightness: Brightness.dark,
-      ),
+      theme: Provider.of<ThemeProvider>(context).themeData,
+      home: const LoginPage(),
     );
   }
 }
