@@ -14,16 +14,12 @@ Pizza App is a mobile application developed using Flutter and Flutter Bloc, foll
 ## Technologies Used
 
 - Flutter: [Flutter Documentation](https://flutter.dev/)
-- Flutter Bloc: [Flutter Bloc Documentation](https://pub.dev/packages/flutter_bloc)
 
 ## Project Structure
 
 The project follows Clean Architecture principles, separating code into layers:
 
 - **presentation:** Contains the UI layer, including screens, widgets, and bloc event listeners.
-- **domain:** Defines the core business logic and entities.
-- **data:** Implements the data sources and repositories.
-- **injection:** Handles dependency injection using the `get_it` package.
 
 ## Getting Started
 
