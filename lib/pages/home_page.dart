@@ -6,12 +6,14 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
+      backgroundColor:const Color.fromARGB(255, 42, 51, 51),
       appBar: AppBar(
         centerTitle: true,
         title: Text('Yezza'),
+        backgroundColor: const Color.fromARGB(255, 42, 51, 51),
       ),
-      drawer:  MyDrawer(),
+      drawer: const MyDrawer(),
     );
   }
 }
