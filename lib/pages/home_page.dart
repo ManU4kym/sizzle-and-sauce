@@ -7,11 +7,11 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:const Color.fromARGB(255, 42, 51, 51),
+      backgroundColor:  Theme.of(context).colorScheme.background,
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Yezza'),
-        backgroundColor: const Color.fromARGB(255, 42, 51, 51),
+        title: const Text('Home'),
+        backgroundColor: Theme.of(context).colorScheme.background,
       ),
       drawer: const MyDrawer(),
     );

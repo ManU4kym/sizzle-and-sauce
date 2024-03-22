@@ -13,8 +13,9 @@ class MyButton extends StatelessWidget {
       child: Container(
         margin: const EdgeInsets.all(15),
         padding: const EdgeInsets.all(25),
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
+        decoration:  BoxDecoration(
+          color: Theme.of(context).colorScheme.secondary
+          /*gradient: LinearGradient(
             begin: Alignment.centerLeft,
             end: Alignment.bottomRight,
             colors: [
@@ -22,7 +23,7 @@ class MyButton extends StatelessWidget {
               Color.fromARGB(255, 212, 218, 212),
               Color.fromARGB(255, 142, 142, 139),
             ],
-          ),
+          ),*/
         ),
         child: Center(
           child: Text(
