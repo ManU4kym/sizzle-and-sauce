@@ -18,9 +18,9 @@ class MyButton extends StatelessWidget {
             begin: Alignment.centerLeft,
             end: Alignment.bottomRight,
             colors: [
-              Colors.white24,
-              Colors.green,
-              Colors.yellow,
+              Color.fromARGB(255, 142, 142, 139),
+              Color.fromARGB(255, 212, 218, 212),
+              Color.fromARGB(255, 142, 142, 139),
             ],
           ),
         ),

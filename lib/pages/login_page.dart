@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:pizaa/components/my_button.dart';
 import 'package:pizaa/components/text_field.dart';
 
+import 'home_page.dart';
+
 class LoginPage extends StatefulWidget {
   final Function()? onTap;
  const LoginPage({super.key, required this.onTap});
@@ -15,6 +17,10 @@ class _LoginPageState extends State<LoginPage> {
   final TextEditingController emailController = TextEditingController();
 
   final TextEditingController passwordController = TextEditingController();
+
+  void login () {
+     Navigator.push(context, MaterialPageRoute( builder: (context) => const HomePage(),),);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -58,9 +64,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
             MyButton(
               text: 'Login',
-              onTap: () {
-                debugPrint('Around');
-              }!,
+              onTap: login,
             ),
             const SizedBox(
               height: 15,

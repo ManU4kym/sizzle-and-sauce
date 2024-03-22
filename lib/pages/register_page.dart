@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:pizaa/components/my_button.dart';
 import 'package:pizaa/components/text_field.dart';
 
+import 'home_page.dart';
+
 class RegisterPage extends StatefulWidget {
   final Function()? onTap;
   const RegisterPage({super.key, required this.onTap});
@@ -15,7 +17,12 @@ class _RegisterPageState extends State<RegisterPage> {
   final TextEditingController emailController = TextEditingController();
 
   final TextEditingController passwordController = TextEditingController();
-  final TextEditingController confirmPasswordController = TextEditingController();
+  final TextEditingController confirmPasswordController =
+      TextEditingController();
+
+  void login () {
+    Navigator.push(context, MaterialPageRoute( builder: (context) => const HomePage(),),);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -66,9 +73,7 @@ class _RegisterPageState extends State<RegisterPage> {
             ),
             MyButton(
               text: 'Login',
-              onTap: () {
-                debugPrint('Around');
-              }!,
+              onTap: login,
             ),
             const SizedBox(
               height: 15,
@@ -82,9 +87,11 @@ class _RegisterPageState extends State<RegisterPage> {
                     color: Theme.of(context).colorScheme.inversePrimary,
                   ),
                 ),
-                const SizedBox(width: 4,),
+                const SizedBox(
+                  width: 4,
+                ),
                 GestureDetector(
-                  onTap: widget.onTap ,
+                  onTap: widget.onTap,
                   child: Text(
                     'Sign In',
                     style: TextStyle(
