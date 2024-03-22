@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
 import 'package:pizaa/auth/login_rigester.dart';
-import 'package:pizaa/pages/login_page.dart';
 import 'package:pizaa/theme/theme_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: Provider.of<ThemeProvider>(context).themeData,
       home: const LoginRegister()
+
     );
   }
 }
