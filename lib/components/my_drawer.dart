@@ -1,6 +1,8 @@
 import 'package:boxicons/boxicons.dart';
 import 'package:flutter/material.dart';
+import 'package:pizaa/auth/login_rigester.dart';
 import 'package:pizaa/components/drawer_tiles.dart';
+import 'package:pizaa/pages/settings_page.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -34,13 +36,29 @@ class MyDrawer extends StatelessWidget {
           DrawerTiles(
             text: 'S E T T I N G S',
             icon: Icons.settings,
-            onTap: () {},
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const SettingsPage(),
+                ),
+              );
+            },
           ),
           const Spacer(),
           DrawerTiles(
             text: 'L O G O U T',
             icon: Boxicons.bxs_log_out_circle,
-            onTap: () {},
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const LoginRegister(),
+                ),
+              );
+            },
           ),
           const SizedBox(
             height: 15,
