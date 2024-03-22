@@ -33,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
             Icon(
               Boxicons.bx_lock_open,
               size: 100,
-              color: Theme.of(context).colorScheme.inversePrimary,
+              color: Theme.of(context).colorScheme.tertiary,
             ),
             const SizedBox(
               height: 25,
@@ -42,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
               'Food Delivery App',
               style: TextStyle(
                 fontSize: 16,
-                color: Theme.of(context).colorScheme.inversePrimary,
+                color: Theme.of(context).colorScheme.tertiary,
               ),
             ),
             const SizedBox(

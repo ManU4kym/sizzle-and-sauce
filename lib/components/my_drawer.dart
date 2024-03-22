@@ -10,8 +10,7 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-     // backgroundColor: const Color.fromARGB(255, 35, 39, 39),
-      backgroundColor:  Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.background,
       child: Column(
         children: [
           Padding(
