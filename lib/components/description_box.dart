@@ -26,6 +26,14 @@ class DescriptionBox extends StatelessWidget {
                 'Deivery fee',
                 style: myTextStyle,
               ),
+              Text(
+                "\$0.332",
+                style: myTextStyle,
+              ),
+              Text(
+                'Deivery fee',
+                style: myTextStyle,
+              ),
             ],
           ),
           Column(
