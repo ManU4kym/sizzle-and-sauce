@@ -42,4 +42,8 @@ Make sure you have Flutter installed. For installation instructions, refer to th
 3. Run app
     ````
    flutter run
+   
+4. screenshots
+   <img src="flutter_02.png" alt="Flutter Screenshot 2" width="300" height="600">
+
 >>>>>>> b00963f4256649cdb64ac479babe03509b8579ff
