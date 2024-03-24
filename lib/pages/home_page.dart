@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pizaa/components/current_location.dart';
 import 'package:pizaa/components/my_drawer.dart';
 import 'package:pizaa/components/silver_app.dart';
 
@@ -21,6 +22,7 @@ class HomePage extends StatelessWidget {
                   endIndent: 25,
                   color: Theme.of(context).colorScheme.secondary,
                 ),
+                LocationCurrent()
               ],
             ),
           ),
