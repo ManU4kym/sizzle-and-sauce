@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pizaa/components/current_location.dart';
+import 'package:pizaa/components/description_box.dart';
 import 'package:pizaa/components/my_drawer.dart';
 import 'package:pizaa/components/silver_app.dart';
 
@@ -13,7 +14,11 @@ class HomePage extends StatelessWidget {
       body: NestedScrollView(
         headerSliverBuilder: (context, innerBoxIsScrolled) => [
           SilverApp(
-            title: const Text('title'),
+            title: Text(
+              'title',
+              style: TextStyle(
+                  color: Theme.of(context).colorScheme.inversePrimary),
+            ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
@@ -22,7 +27,11 @@ class HomePage extends StatelessWidget {
                   endIndent: 25,
                   color: Theme.of(context).colorScheme.secondary,
                 ),
-                LocationCurrent()
+                const LocationCurrent(),
+                const DescriptionBox(),
+                const SizedBox(
+                  height: 35,
+                )
               ],
             ),
           ),
