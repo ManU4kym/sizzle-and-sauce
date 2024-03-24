@@ -8,10 +8,21 @@ class LocationCurrent extends StatelessWidget {
     showDialog(
         context: context,
         builder: (context) => AlertDialog(
-              title: Text("Your Location"),
-              content: TextField(
-                decoration: const InputDecoration(hintText: "Search address"),
+              title: const Text("Your Location"),
+              content: const TextField(
+                decoration: InputDecoration(hintText: "Search address"),
               ),
+              actions: [
+                // cancel button
+                MaterialButton(
+                  onPressed: () => Navigator.pop(context),
+                  child: const Text('Cancel'),
+                ),
+                MaterialButton(
+                  onPressed: () => Navigator.pop(context),
+                  child: const Text("Save"),
+                ),
+              ],
             ));
   }
 
@@ -25,7 +36,7 @@ class LocationCurrent extends StatelessWidget {
           Text(
             " Deliver Now ",
             style: GoogleFonts.afacad(
-                color: Theme.of(context).colorScheme.secondary),
+                color: Theme.of(context).colorScheme.inversePrimary),
           ),
           GestureDetector(
             onTap: () => locationSearchBox(context),
