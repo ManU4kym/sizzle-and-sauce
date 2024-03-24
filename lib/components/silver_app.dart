@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class SilverApp extends StatelessWidget {
+class MySilverApp extends StatelessWidget {
   final Widget child;
   final Widget title;
-  const SilverApp({
+  const MySilverApp({
     super.key,
     required this.child,
     required this.title,
