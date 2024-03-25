@@ -36,7 +36,8 @@ class LocationCurrent extends StatelessWidget {
           Text(
             " Deliver Now ",
             style: GoogleFonts.afacad(
-                color: Theme.of(context).colorScheme.inversePrimary),
+                color:
+                    Theme.of(context).colorScheme.background.withOpacity(0.8)),
           ),
           GestureDetector(
             onTap: () => locationSearchBox(context),
@@ -45,7 +46,10 @@ class LocationCurrent extends StatelessWidget {
                 Text(
                   "1153 Fouba Loop",
                   style: GoogleFonts.afacad(
-                    color: Theme.of(context).colorScheme.inversePrimary,
+                    color: Theme.of(context)
+                        .colorScheme
+                        .background
+                        .withOpacity(0.5),
                     fontWeight: FontWeight.bold,
                   ),
                 ),

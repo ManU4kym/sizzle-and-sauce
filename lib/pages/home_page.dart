@@ -33,7 +33,8 @@ class _HomePageState extends State<HomePage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor:
+          Theme.of(context).colorScheme.background.withOpacity(0.9),
       drawer: const MyDrawer(),
       body: NestedScrollView(
         headerSliverBuilder: (context, innerBoxIsScrolled) => [
@@ -47,7 +48,7 @@ class _HomePageState extends State<HomePage>
                 Divider(
                   indent: 25,
                   endIndent: 25,
-                  color: Theme.of(context).colorScheme.secondary,
+                  color: Theme.of(context).colorScheme.background,
                 ),
                 const LocationCurrent(),
                 const DescriptionBox(),
@@ -60,8 +61,11 @@ class _HomePageState extends State<HomePage>
         ],
         body: TabBarView(
           controller: _tabController,
-          children: const [
-            Text("Sleep tight Dummy"),
+          children: [
+            ListView.builder(
+              itemBuilder: (context, index) => Text("Sleep tight Dummy"),
+              itemCount: 5,
+            ),
             Text("Sleep tight Dummy"),
             Text("Sleep tight Dummy"),
           ],

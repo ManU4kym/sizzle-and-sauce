@@ -5,11 +5,11 @@ class DescriptionBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var myTextStyle = TextStyle(color: Theme.of(context).colorScheme.secondary);
+    var myTextStyle =
+        TextStyle(color: Theme.of(context).colorScheme.background);
     return Container(
       decoration: BoxDecoration(
-        border: Border.all(
-            color: Theme.of(context).colorScheme.secondary.withOpacity(0.7)),
+        border: Border.all(color: Theme.of(context).colorScheme.background),
         borderRadius: BorderRadius.circular(8),
       ),
       padding: const EdgeInsets.all(25),

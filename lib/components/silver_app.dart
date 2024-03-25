@@ -21,8 +21,8 @@ class MySilverApp extends StatelessWidget {
       actions: [
         IconButton(onPressed: () {}, icon: const Icon(Icons.shopping_cart))
       ],
-      backgroundColor: Theme.of(context).colorScheme.background,
-      foregroundColor: Theme.of(context).colorScheme.tertiary,
+      backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+      foregroundColor: Theme.of(context).colorScheme.background,
       title: Text(
         'Spiny spikes Diner',
         style: GoogleFonts.dancingScript(

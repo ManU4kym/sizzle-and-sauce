@@ -9,25 +9,25 @@ class MyTabBar extends StatelessWidget {
     return Container(
       child: TabBar(
         controller: tabController,
-        tabs: const [
+        tabs: [
           // 1st tab
           Tab(
             icon: Icon(
               Icons.home,
-              color: Colors.grey,
+              color: Colors.grey[100],
             ),
           ),
           // 2nd tab
           Tab(
             icon: Icon(
               Icons.settings,
-              color: Colors.grey,
+              color: Colors.grey[100],
             ),
           ),
           Tab(
             icon: Icon(
               Icons.person,
-              color: Colors.grey,
+              color: Colors.grey[100],
             ),
           ),
         ],
