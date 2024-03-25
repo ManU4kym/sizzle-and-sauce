@@ -1,6 +1,7 @@
+import 'package:flutter/material.dart';
 import 'package:pizaa/model/food.dart';
 
-class Restaurant {
+class Restaurant extends ChangeNotifier {
   final List<Food> _menu = [
     //food
     Food(
