@@ -12,14 +12,23 @@ class MyTabBar extends StatelessWidget {
         tabs: const [
           // 1st tab
           Tab(
-            icon: Icon(Icons.home),
+            icon: Icon(
+              Icons.home,
+              color: Colors.grey,
+            ),
           ),
           // 2nd tab
           Tab(
-            icon: Icon(Icons.settings),
+            icon: Icon(
+              Icons.settings,
+              color: Colors.grey,
+            ),
           ),
           Tab(
-            icon: Icon(Icons.person),
+            icon: Icon(
+              Icons.person,
+              color: Colors.grey,
+            ),
           ),
         ],
       ),

@@ -8,7 +8,8 @@ class DescriptionBox extends StatelessWidget {
     var myTextStyle = TextStyle(color: Theme.of(context).colorScheme.secondary);
     return Container(
       decoration: BoxDecoration(
-        border: Border.all(color: Theme.of(context).colorScheme.secondary),
+        border: Border.all(
+            color: Theme.of(context).colorScheme.secondary.withOpacity(0.7)),
         borderRadius: BorderRadius.circular(8),
       ),
       padding: const EdgeInsets.all(25),

@@ -60,7 +60,7 @@ class _HomePageState extends State<HomePage>
         ],
         body: TabBarView(
           controller: _tabController,
-          children: [
+          children: const [
             Text("Sleep tight Dummy"),
             Text("Sleep tight Dummy"),
             Text("Sleep tight Dummy"),
