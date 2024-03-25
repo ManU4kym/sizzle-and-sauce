@@ -4,6 +4,7 @@ import 'package:pizaa/components/description_box.dart';
 import 'package:pizaa/components/my_drawer.dart';
 import 'package:pizaa/components/silver_app.dart';
 import 'package:pizaa/components/tab_bar.dart';
+import 'package:pizaa/model/food.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -21,7 +22,8 @@ class _HomePageState extends State<HomePage>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 3, vsync: this);
+    _tabController =
+        TabController(length: FoodCategory.values.length, vsync: this);
   }
 
   @override
@@ -66,8 +68,22 @@ class _HomePageState extends State<HomePage>
               itemBuilder: (context, index) => Text("Sleep tight Dummy"),
               itemCount: 5,
             ),
-            Text("Sleep tight Dummy"),
-            Text("Sleep tight Dummy"),
+            ListView.builder(
+              itemBuilder: (context, index) => Text("Sleep tight Dummy"),
+              itemCount: 9,
+            ),
+            ListView.builder(
+              itemBuilder: (context, index) => Text("Sleep tight Dummy"),
+              itemCount: 9,
+            ),
+            ListView.builder(
+              itemBuilder: (context, index) => Text("Sleep tight Dummy"),
+              itemCount: 9,
+            ),
+            ListView.builder(
+              itemBuilder: (context, index) => Text("Sleep tight Dummy"),
+              itemCount: 9,
+            ),
           ],
         ),
       ),

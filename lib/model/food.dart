@@ -6,13 +6,13 @@ class Food {
   final FoodCategory category;
   List<Addon> addons;
 
-  Food(
-    this.category,
-    this.addons, {
+  Food({
     required this.name,
     required this.description,
     required this.imagePath,
     required this.price,
+    required this.category,
+    required this.addons,
   });
 }
 
